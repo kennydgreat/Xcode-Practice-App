@@ -15,6 +15,9 @@
 		CE26624D215E9164007C37D8 /* Xcode_Practice_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26624C215E9164007C37D8 /* Xcode_Practice_AppTests.swift */; };
 		CE266258215E9164007C37D8 /* Xcode_Practice_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE266257215E9164007C37D8 /* Xcode_Practice_AppUITests.swift */; };
 		CE2662A0215EB6F3007C37D8 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26629F215EB6F3007C37D8 /* Screen2ViewController.swift */; };
+		CE5342872167DC8C009D4E79 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5342862167DC8C009D4E79 /* TableViewController.swift */; };
+		CE5342882167DC8C009D4E79 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5342862167DC8C009D4E79 /* TableViewController.swift */; };
+		CE5342892167DC8C009D4E79 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5342862167DC8C009D4E79 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		CE266257215E9164007C37D8 /* Xcode_Practice_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode_Practice_AppUITests.swift; sourceTree = "<group>"; };
 		CE266259215E9164007C37D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE26629F215EB6F3007C37D8 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
+		CE53427A2167DBAC009D4E79 /* Xcode Practice App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xcode Practice App-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE53427B2167DBAC009D4E79 /* Xcode Practice AppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xcode Practice AppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE53427C2167DBAC009D4E79 /* Xcode Practice AppUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xcode Practice AppUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE5342862167DC8C009D4E79 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,10 @@
 				CE26623E215E9164007C37D8 /* Assets.xcassets */,
 				CE266240215E9164007C37D8 /* LaunchScreen.storyboard */,
 				CE266243215E9164007C37D8 /* Info.plist */,
+				CE53427A2167DBAC009D4E79 /* Xcode Practice App-Bridging-Header.h */,
+				CE53427B2167DBAC009D4E79 /* Xcode Practice AppTests-Bridging-Header.h */,
+				CE53427C2167DBAC009D4E79 /* Xcode Practice AppUITests-Bridging-Header.h */,
+				CE5342862167DC8C009D4E79 /* TableViewController.swift */,
 			);
 			path = "Xcode Practice App";
 			sourceTree = "<group>";
@@ -196,13 +207,16 @@
 				TargetAttributes = {
 					CE266233215E9163007C37D8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					CE266247215E9164007C37D8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = CE266233215E9163007C37D8;
 					};
 					CE266252215E9164007C37D8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = CE266233215E9163007C37D8;
 					};
 				};
@@ -262,6 +276,7 @@
 				CE26623A215E9163007C37D8 /* ViewController.swift in Sources */,
 				CE266238215E9163007C37D8 /* AppDelegate.swift in Sources */,
 				CE2662A0215EB6F3007C37D8 /* Screen2ViewController.swift in Sources */,
+				CE5342872167DC8C009D4E79 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE26624D215E9164007C37D8 /* Xcode_Practice_AppTests.swift in Sources */,
+				CE5342882167DC8C009D4E79 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE266258215E9164007C37D8 /* Xcode_Practice_AppUITests.swift in Sources */,
+				CE5342892167DC8C009D4E79 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,6 +460,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,6 +491,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,6 +501,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice AppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcode Practice App.app/Xcode Practice App";
@@ -489,6 +514,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice AppTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xcode Practice App.app/Xcode Practice App";
@@ -508,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +545,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice AppUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Xcode Practice App";
@@ -527,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Xcode Practice AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,6 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Kenneth.Xcode-Practice-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcode Practice App/Xcode Practice AppUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Xcode Practice App";
