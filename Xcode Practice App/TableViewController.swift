@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var movies:[String] = ["Thor: Ragnarok", "Civil War", "Venom", "Black Panther","Avengers:Infinity War", "What's Eating Gilbert Grape", "Sacred Games"]
+    var items:[String] = ["finish assignment","buygroceries"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,19 +37,41 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return movies.count
+        return items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listItemCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text=movies[indexPath.row]
+        cell.textLabel?.text=items[indexPath.row]
         return cell
     }
 
-
+    @IBAction func addButtonPressed(_ sender: Any) {
+        //MARK: Code for the creating an alert Box
+        let popup = UIAlertController(title: "Add new item", message: "enter your item the box below", preferredStyle: .alert)
+        
+        //MARK: adding a text box
+        popup.addTextField()
+        
+        //MARK: creating,configuring, adding the button to the alert box
+         let cancelButton = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        let saveButton = UIAlertAction(title: "Save", style: .default, handler: {
+            //ToDoListController
+            action in
+            //codefor what should happen when you click the button
+            _ = popup.textFields?[0].text
+    
+        })
+        popup.addAction(cancelButton)
+        popup.addAction(saveButton)
+        
+        //showing the alret box
+        present(popup,animated: true)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
